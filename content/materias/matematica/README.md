@@ -1,0 +1,21 @@
+# Matemática Aplicada
+
+**Total clases:** 15
+**Clases con contenido:** 2
+**Clases pendientes:** 13
+
+## Clases
+
+- [ ] Clase 3 — *(pendiente)*
+- [ ] Clase 4 — *(pendiente)*
+- [ ] Clase 5 — *(pendiente)*
+- [ ] Clase 6 — *(pendiente)*
+- [ ] Clase 7 — *(pendiente)*
+- [ ] Clase 8 — *(pendiente)*
+- [ ] Clase 9 — *(pendiente)*
+- [ ] Clase 10 — *(pendiente)*
+- [ ] Clase 11 — *(pendiente)*
+- [ ] Clase 12 — *(pendiente)*
+- [ ] Clase 13 — *(pendiente)*
+- [ ] Clase 14 — *(pendiente)*
+- [ ] Clase 15 — *(pendiente)*
