@@ -1,0 +1,208 @@
+@use "./variables.scss" as *;
+
+// ─── Omarchy Rice ───────────────────────────────────────────
+// Paleta: bg #010303, fg #E7E2CB, accent #9ba5bb
+
+// ── Layout ──
+.page {
+  margin: 0 auto;
+  max-width: 1400px;
+}
+
+// ── Sidebar ──
+#quartz-root .desktop-only,
+.sidebar,
+.left-sidebar,
+.explorer {
+  background-color: #010303 !important;
+}
+
+.explorer {
+  border-right: 1px solid rgba(155, 165, 187, 0.15);
+}
+
+// ── Explorer (file tree) ──
+.explorer .folder-container .folder-icon {
+  color: #9ba5bb !important;
+  opacity: 0.6;
+}
+
+.explorer .file-node a {
+  color: #c5c0ab !important;
+  font-size: 0.85rem;
+  padding: 0.15rem 0.4rem;
+  border-radius: 4px;
+  transition: background 0.15s ease;
+}
+
+.explorer .file-node a:hover,
+.explorer .file-node.active a {
+  background: rgba(155, 165, 187, 0.12);
+  color: #E7E2CB !important;
+}
+
+.explorer .folder-container {
+  border-left: 1px solid rgba(155, 165, 187, 0.1);
+  margin-left: 0.5rem;
+  padding-left: 0.5rem;
+}
+
+// ── Typography ──
+body {
+  font-feature-settings: "calt", "liga", "ss01", "ss02";
+}
+
+h1, h2, h3, h4, h5 {
+  letter-spacing: -0.02em;
+}
+
+h1 { font-size: 1.8rem; border-bottom: 1px solid rgba(155, 165, 187, 0.2); padding-bottom: 0.3rem; }
+h2 { font-size: 1.4rem; }
+h3 { font-size: 1.15rem; }
+
+// ── Inline code ──
+code {
+  background: rgba(155, 165, 187, 0.1) !important;
+  border: 1px solid rgba(155, 165, 187, 0.15) !important;
+  border-radius: 4px;
+  padding: 0.1em 0.3em;
+  font-size: 0.85em;
+  color: #E7E2CB;
+}
+
+pre {
+  border: 1px solid rgba(155, 165, 187, 0.12);
+  border-radius: 8px;
+  background: rgba(0, 0, 0, 0.3) !important;
+}
+
+pre code {
+  border: none !important;
+  background: transparent !important;
+}
+
+// ── Links ──
+a {
+  color: #9ba5bb !important;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(155, 165, 187, 0.3);
+  transition: border-color 0.2s ease;
+}
+
+a:hover {
+  color: #E7E2CB !important;
+  border-bottom-color: #9ba5bb;
+}
+
+// ── Blockquotes ──
+blockquote {
+  border-left: 3px solid #9ba5bb;
+  background: rgba(155, 165, 187, 0.05);
+  padding: 0.5rem 1rem;
+  border-radius: 0 4px 4px 0;
+}
+
+// ── Tables ──
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th {
+  background: rgba(155, 165, 187, 0.1);
+  border-bottom: 2px solid rgba(155, 165, 187, 0.3);
+  color: #E7E2CB;
+  font-weight: 600;
+}
+
+td, th {
+  padding: 0.4rem 0.6rem;
+  border: 1px solid rgba(155, 165, 187, 0.12);
+}
+
+tr:nth-child(even) {
+  background: rgba(155, 165, 187, 0.03);
+}
+
+// ── Graph view ──
+.graph-container {
+  background: rgba(0, 3, 3, 0.6) !important;
+  border: 1px solid rgba(155, 165, 187, 0.12) !important;
+  border-radius: 8px;
+}
+
+// ── Search ──
+.search {
+  border: 1px solid rgba(155, 165, 187, 0.15) !important;
+  border-radius: 6px !important;
+  background: rgba(0, 0, 0, 0.3) !important;
+}
+
+.search:focus-within {
+  border-color: #9ba5bb !important;
+}
+
+// ── Popover preview ──
+.popover {
+  background: #0a0e0d !important;
+  border: 1px solid rgba(155, 165, 187, 0.2) !important;
+  border-radius: 8px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+}
+
+// ── Checkboxes ──
+input[type="checkbox"] {
+  accent-color: #9ba5bb;
+}
+
+// ── Scrollbar ──
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(155, 165, 187, 0.2);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(155, 165, 187, 0.4);
+}
+
+// ── Toc ──
+.toc {
+  border-left: 1px solid rgba(155, 165, 187, 0.12);
+  padding-left: 1rem;
+}
+
+.toc a {
+  font-size: 0.85rem;
+  border-bottom: none;
+}
+
+.toc a:hover {
+  color: #E7E2CB !important;
+}
+
+// ── Tags ──
+.tag {
+  background: rgba(155, 165, 187, 0.1) !important;
+  border-radius: 4px;
+  padding: 0.1em 0.4em;
+  font-size: 0.8em;
+  color: #9ba5bb !important;
+}
+
+// ── Footer ──
+footer {
+  border-top: 1px solid rgba(155, 165, 187, 0.1);
+  margin-top: 2rem;
+  padding-top: 1rem;
+  font-size: 0.85rem;
+  color: #5b6362;
+}
